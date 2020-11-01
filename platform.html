@@ -9,6 +9,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>IPERCITIES</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -21,7 +23,6 @@
 		<link rel="stylesheet" href="css/skel.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/mystyle.css" />
-
 		<link rel="stylesheet" href="css/style-xlarge.css" />
 	</noscript>
 
@@ -112,45 +113,30 @@
 		<p></p>
 		<ul class="actions">
 			<li>
-				<a href="#testbed" class="button big">Plateforme Smart City</a>
+				<a href="#testbed" class="button big">Plateforme Smart City: Image Gallery</a>
 			</li>
 		</ul>
 	</section>
 
 	<!-- Main -->
 	<section id="main" class="wrapper">
-		<!-- <div class="container">
 
-			<header class="major">
-				<h2>Platforme</h2>
-				<p>Plateforme d'expérimentation </p>
-			</header>
-			 
-			<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-			<p>Coming Soon.</p>
-			<p>Coming Soon.</p>
-			<p>Coming Soon</p> 
-
-		</div>	
-
-
-		 <div style="text-align:center">
-			<h2 id="testbed">Plateforme Smart City</h2>
-			<p></p>
+		<div style="text-align:center">
+			<h2 id="testbed">Plateforme Smart City: Image Gallery</h2>
+			<p>Cliquez sur les images ci-dessous: </p>
 		</div>
-	 -->
 
 		<!-- The four columns -->
 		<div class="row">
 			<div class="column">
 				<img src="images/blockchain.jpg" alt="Blockchain" style="width:100%" onclick="myFunction(this);">
-				<div class="desc">Environement Blockchain</div>
+				<!-- <div class="desc">Environement Blockchain</div> -->
 			</div>
 
 			<div class="column">
 				<img src="images/kubernetes-on-raspberry-pi.jpg" alt="Kuberntes" style="width:100%"
 					onclick="myFunction(this);">
-				<div class="desc">Cluster Kubernetes</div>
+				<!-- <div class="desc">Cluster Kubernetes</div> -->
 
 			</div>
 
@@ -164,12 +150,11 @@
 			</div>
 		</div>
 
-		<!-- <div class="container">
+		<div class="container">
 			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 			<img id="expandedImg" style="width:100%">
 			<div id="imgtext"></div>
-		</div> -->
-
+		</div>
 	</section>
 
 	<!-- Footer -->
@@ -182,16 +167,12 @@
 							de la Recherche scientifique (Tunisie)</h3>
 						<ul class="unstyled">
 							<li>
-								<a href="#">
-								</a>
 								<img class="fit-picture" src="images/mestn.jpg" alt="MES-TN" width="250" height="170">
-								<br>
-								<a>Ce travail a été financé par le Ministère tunisien de l'Enseignement Supérieur et de
-									la recherche
-									scientifique (MES) dans le cadre du Programme d'Encouragement des Jeunes Chercheurs
-									(PEJC) sous le contrat
-									19PEJC09-04.
-								</a>
+								Ce travail a été financé par le Ministère tunisien de l'Enseignement Supérieur et de
+								la recherche
+								scientifique (MES) dans le cadre du Programme d'Encouragement des Jeunes Chercheurs
+								(PEJC) sous le contrat
+								19PEJC09-04.
 							</li>
 						</ul>
 					</section>
@@ -199,16 +180,10 @@
 						<h3>Points de vue des groupes du consortium</h3>
 						<ul class="unstyled">
 							<li>
-								<a>Le contenu de ce site web reflète uniquement les vues des membres de l’équipe
-									IPERCITIES. Le Ministère de l'Enseignement supérieur et de la Recherche
-									Scientifique (MES) n’est pas responsable de l’utilisation qui
-									pourrait être faite des informations contenues dans ce document.
-								</a>
-								<!-- 							<a>
-									Toutes les opinions, constatations et conclusions ou recommandations
-									exprimées dans ce document sont celles des auteurs et ne reflètent pas
-									nécessairement les points de vue du programme MES.
-								</a> -->
+								Le contenu de ce site web reflète uniquement les vues des membres de l’équipe
+								IPERCITIES. Le Ministère de l'Enseignement supérieur et de la Recherche
+								Scientifique (MES) n’est pas responsable de l’utilisation qui
+								pourrait être faite des informations contenues dans ce document.
 							</li>
 
 						</ul>
@@ -216,13 +191,12 @@
 					<section class="3u 6u(medium) 12u$(small)">
 						<h3>Opinions</h3>
 						<ul class="unstyled">
-							<li><a href="#">Toutes les opinions, constatations et conclusions ou recommandations
-									exprimées dans ce document sont celles des auteurs et ne reflètent pas
-									nécessairement les points de vue du programme MES.</a></li>
+							<li>Toutes les opinions, constatations et conclusions ou recommandations
+								exprimées dans ce document sont celles des auteurs et ne reflètent pas
+								nécessairement les points de vue du programme MES.
+							</li>
 						</ul>
-					</section> -->
-
-
+					</section>
 					<section class="3u$ 6u$(medium) 12u$(small)">
 						<h3>Remerciments</h3>
 						<ul class="unstyled">
@@ -262,7 +236,15 @@
 			</div>
 		</div>
 	</footer>
-
+	<script>
+		function myFunction(imgs) {
+			var expandImg = document.getElementById("expandedImg");
+			var imgText = document.getElementById("imgtext");
+			expandImg.src = imgs.src;
+			imgText.innerHTML = imgs.alt;
+			expandImg.parentElement.style.display = "block";
+		}
+	</script>
 </body>
 
 </html>
