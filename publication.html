@@ -12,16 +12,24 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
+
+
 	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/skel.min.js"></script>
 	<script src="js/skel-layers.min.js"></script>
 	<script src="js/init.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 	<noscript>
 		<link rel="stylesheet" href="css/skel.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-xlarge.css" />
 	</noscript>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> -->
+
 </head>
 
 <body>
@@ -58,7 +66,7 @@
 		<div class="container">
 
 			<header class="major">
-				<h2 id="pub">Liste des Publications</h2>
+				<h2 id="pub">Liste des Publications: cliquer pour afficher le document PDF</h2>
 				<!-- <p>Liste des publications</p> -->
 			</header>
 
@@ -66,67 +74,166 @@
 			<h2>Journaux</h2>
 			<p>Coming Soon.</p>
 			<h2>Conférences</h2>
-			<li>
-				Hakiri, Bassem Sellami, Sadok Ben Yahia, and Pascal Berthou. A SDN-based IoT Architecture Framework
-				for
-				Efficient Energy Management in Smart Buildings. IEEE Global Information Infrastructure Networking
-				Symposium (GIIS). October 28 – 30, 2020. (Online Conference).
-				<a href="publications/GIIS2020-shortpaper.pdf">PDF.</a>
-			</li>
-			<li> Akram Hakiri, Bassem Sellami, Sadok Ben Yahia, and Pascal Berthou. A Blockchain Architecture for
-				SDN-enabled
-				Tamper-Resistant
-				IoT Networks. IEEE Global Information Infrastructure Networking Symposium (GIIS). October 28 – 30, 2020.
-				(Online
-				Conference). PDF <a href="publications/GIIS2020-1-short.pdf">PDF</a></li>
-			<li> Bassem Sellami, Akram Hakiri, Sadok Ben Yahia, and Pascal Berthou. Deep Reinforcement Learning for
-				Energy-Efficient
-				Task Scheduling in SDN-based IoT Network. The 19th IEEE International Symposium on Network Computing and
-				Applications
-				(NCA 2020). 26-28 November 2020. Online conference. <a href="publications/NCA2020.pdf">PDF</a></li>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<p data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+								Hakiri, Bassem Sellami, Sadok Ben Yahia, and Pascal Berthou. A SDN-based IoT
+								Architecture Framework
+								for
+								Efficient Energy Management in Smart Buildings. IEEE Global Information Infrastructure
+								Networking
+								Symposium (GIIS). October 28 – 30, 2020. (Online Conference).<a
+									href="publications/GIIS2020-shortpaper.pdf">PDF.</a></p>
+						</h4>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse ">
+						<div class="panel-body">
+							<embed src="publications/GIIS2020-shortpaper.pdf" type="application/pdf" width="100%"
+								height="860" />
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<p data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+								Akram Hakiri, Bassem Sellami, Sadok Ben Yahia, and Pascal Berthou. A Blockchain
+								Architecture for
+								SDN-enabled
+								Tamper-Resistant
+								IoT Networks. IEEE Global Information Infrastructure Networking Symposium (GIIS).
+								October 28 – 30, 2020.
+								(Online
+								Conference). <a href="publications/GIIS2020-1-short.pdf">PDF</p></a>
+						</h4>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse">
+						<div class="panel-body"> <embed src="publications/GIIS2020-1-short.pdf" type="application/pdf"
+								width="100%" height="900px" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<p data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+							Bassem Sellami, Akram Hakiri, Sadok Ben Yahia, and Pascal Berthou. Deep Reinforcement
+							Learning for
+							Energy-Efficient
+							Task Scheduling in SDN-based IoT Network. The 19th IEEE International Symposium on Network
+							Computing and
+							Applications
+							(NCA 2020). 26-28 November 2020. Online conference.<a
+								href="publications/NCA2020.pdf">PDF</a></p>
+					</h4>
+				</div>
+				<div id="collapse3" class="panel-collapse collapse">
+					<div class="panel-body">
+						<embed src="publications/NCA2020.pdf" type="application/pdf" width="100%" height="800px" />
+
+					</div>
+				</div>
+			</div>
+
 
 			<h2>Workshop et Séminaires</h2>
-			<li> Akram Hakiri, Bassem Sallemi, Fatma Ghandour, and Sadok Ben Yahia. A Blockchain-Oriented Distributed
-				SDN-aware
-				Architecture for
-				a Scalable Smart City Network. DiCES-N 2020 : The 2nd Distributed Computing for Emerging Smart Networks
-				whorkshop
-				(Virtual Workshop).
-				December 18, 2020, Bizerte, Tunisia.
-				<a href="publications/DiCESN-2020-1.pdf">PDF</a></li>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<p data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+							Akram Hakiri, Bassem Sallemi, Fatma Ghandour, and Sadok Ben Yahia. A Blockchain-Oriented
+							Distributed
+							SDN-aware
+							Architecture for
+							a Scalable Smart City Network. DiCES-N 2020 : The 2nd Distributed Computing for Emerging
+							Smart Networks
+							whorkshop
+							(Virtual Workshop).
+							December 18, 2020, Bizerte, Tunisia. <a href="publications/DiCESN-2020-1.pdf">PDF</a></p>
+					</h4>
+				</div>
+				<div id="collapse4" class="panel-collapse collapse">
+					<div class="panel-body">
+						<embed src="publications/DiCESN-2020.pdf" type="application/pdf" width="100%" height="800px" />
+					</div>
+				</div>
+			</div>
 
-			</li>
-			<li>Akram Hakiri, Bassem Sallemi, Fatma Ghandour, and Sadok Ben Yahia. Secure, Context-Aware and QoS-enabled
-				SDN
-				Architecture to
-				improve Energy Efficiency in IoT-based Smart Buildings. DiCES-N 2020 : The 2nd Distributed Computing for
-				Emerging
-				Smart Networks
-				whorkshop (Virtual Workshop). December 18, 2020, Bizerte, Tunisia.
-				<a href="publications/DiCESN-2020.pdf">PDF</a></li>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+							Akram Hakiri, Bassem Sallemi, Fatma Ghandour, and Sadok Ben Yahia. Secure, Context-Aware and
+							QoS-enabled
+							SDN
+							Architecture to
+							improve Energy Efficiency in IoT-based Smart Buildings. DiCES-N 2020 : The 2nd Distributed
+							Computing for
+							Emerging
+							Smart Networks
+							whorkshop (Virtual Workshop). December 18, 2020, Bizerte, Tunisia. <a
+								href="publications/DiCESN-2020-1.pdf">PDF</a></a>
+					</h4>
+				</div>
+				<div id="collapse5" class="panel-collapse collapse">
+					<div class="panel-body">
+						<embed src="publications/DiCESN-2020-1.pdf" type="application/pdf" width="100%"
+							height="800px" />
 
-			</li>
-			<li>
-				Ziran Min, Robert E. Canady, Akram Hakiri, Uttam Ghosh, Aniruddha Suresh Gokhale. Tools and Techniques
-				for
-				Privacy-aware, Edge-centric
-				Distributed Deep Learning. Fourth Workshop on Distributed Infrastructures for Deep Learning (DIDL).
-				December 7-11.
-				2020. (Virtual Workshop).
-				<a href="publications/DIDL2020-Last.pdf">PDF</a></li>
-							<embed src="publications/DIDL2020-Last.pdf" type="application/pdf" width="100%" height="600px" />
+					</div>
+				</div>
+			</div>
 
-			</li>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<p data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+							Ziran Min, Robert E. Canady, Akram Hakiri, Uttam Ghosh, Aniruddha Suresh Gokhale. Tools and
+							Techniques
+							for
+							Privacy-aware, Edge-centric
+							Distributed Deep Learning. Fourth Workshop on Distributed Infrastructures for Deep Learning
+							(DIDL).
+							December 7-11.
+							2020. (Virtual Workshop). <a href="publications/DIDL2020-Last.pdf">PDF</p></a>
+					</h4>
+				</div>
+				<div id="collapse6" class="panel-collapse collapse">
+					<div class="panel-body">
+						<embed src="publications/DIDL2020-Last.pdf" type="application/pdf" width="100%"
+							height="800px" />
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
 			<h3>Ouvrages</h3>
-			<li>Akram Hakiri and Aniruddha Gokhale. A Software Defined Blockchain-based Architecture for Scalable and
-				Tamper-Resistant
-				IoT-enabled Smart Cities. IET book on "Communication Technologies for Networked Smart Cities". pages
-				1-25.
-				November 2020.
-				<a href="publications/IET book 2020.pdf">PDF</a></li>
-				<embed src="publications/IET book 2020.pdf" type="application/pdf" width="100%" height="600px" />
-
-			</li>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<p data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+							Akram Hakiri and Aniruddha Gokhale. A Software Defined Blockchain-based Architecture for
+							Scalable and
+							Tamper-Resistant
+							IoT-enabled Smart Cities. IET book on "Communication Technologies for Networked Smart
+							Cities". pages
+							1-25.
+							November 2020. <a href="publications/IET book 2020.pdf">PDF</a></p>
+					</h4>
+				</div>
+				<div id="collapse7" class="panel-collapse collapse">
+					<div class="panel-body">
+						<embed src="publications/IET book 2020.pdf" type="application/pdf" width="100%" height="800" />
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -186,7 +293,8 @@
 						<ul class="unstyled">
 							<li>Direction générale des recherches scientifiques</li>
 							<li>Direction des Programmes Nationaux de Recherche</li>
-							<li>Programme d’Encouragement des Jeunes Chercheurs (PEJC)</li>						</ul>
+							<li>Programme d’Encouragement des Jeunes Chercheurs (PEJC)</li>
+						</ul>
 					</section>
 				</div>
 			</section>
@@ -195,7 +303,8 @@
 				<div class="8u 12u$(medium)">
 					<ul class="copyright">
 						<li>&copy; Akram Hakiri. All rights reserved.</li>
-						<li><a href="https://scholar.google.fr/citations?user=hWFrDC4AAAAJ&hl=en">Google Scholar</a> </li>
+						<li><a href="https://scholar.google.fr/citations?user=hWFrDC4AAAAJ&hl=en">Google Scholar</a>
+						</li>
 						<li><a href="https://dblp.org/pid/37/8396.html">DBLP</a></li>
 					</ul>
 				</div>
